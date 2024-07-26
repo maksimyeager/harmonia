@@ -13,7 +13,7 @@ const RegisterPage = () => {
     };
 
     return (
-        <div className="flex items-center justify-center bg-white">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="p-8 w-full max-w-md">
                 <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
                 <form onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ const RegisterPage = () => {
                 </form>
                 <p className="mt-4 text-center">
                     Already have an account?{' '}
-                    <Link to="/login" className="text-[#451614] hover:underline">
+                    <Link to="/login" className="text-[#451614;] hover:underline">
                         Login
                     </Link>
                 </p>
