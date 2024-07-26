@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ image, name, price, link }) => {
+const ProductCard = ({ id, image, name, price }) => {
     return (
-        <div className="bg-white verflow-hidden border border-solid border-[#e5e5e5]">
-            <div className="w-full h-48 relative">
+        <div key={id} className="bg-white border border-solid border-[#e5e5e5] h-auto">
+            <div className="card-image w-full relative overflow-hidden">
+                <Link to={`/product/${id}`} className="absolute top-0 bottom-0 left-0 right-0 z-10"></Link>
                 <img
                     src={image}
                     alt={name}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full object-cover"
                 />
             </div>
 
             <div className="p-4">
-                <h2 className="text-xl font-bold mb-2">{name}</h2>
-                <p className="text-lg text-gray-700 mb-4 font-semibold">{price}{" "}₼</p>
+                <Link to={`/product/${id}`} className="block text-lg md:text-xl font-bold mb-2 hover:underline">{name}</Link>
+                <p className="text-base md:text-lg text-gray-700 mb-4 font-semibold">{price.toFixed(2)} ₼</p>
             </div>
         </div>
     );

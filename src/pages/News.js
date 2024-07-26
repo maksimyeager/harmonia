@@ -1,6 +1,11 @@
 import React from 'react';
 
-import image from "./../assets/images/image.jpg"
+import image1 from "./../assets/images/image-1.jpg"
+import image2 from "./../assets/images/image-2.jpg"
+import image3 from "./../assets/images/image-3.jpg"
+import image4 from "./../assets/images/image-4.webp"
+import image5 from "./../assets/images/image-5.jpg"
+import image6 from "./../assets/images/image-6.webp"
 
 const News = () => {
     const newsItems = [
@@ -9,42 +14,42 @@ const News = () => {
             title: "New Guitar Models Released",
             date: "2024-01-15",
             description: "We are excited to announce the release of our new guitar models. Check them out in our store!",
-            image: image
+            image: image2
         },
         {
             id: 2,
             title: "Spring Sale Starts Now",
             date: "2024-03-10",
             description: "Our spring sale is live! Get amazing discounts on selected guitars.",
-            image: image
+            image: image1
         },
         {
             id: 3,
             title: "Exclusive Interview with Famous Guitarist",
             date: "2024-04-05",
             description: "Read our exclusive interview with the famous guitarist John Doe.",
-            image: image
+            image: image4
         },
         {
             id: 4,
             title: "Guitar Maintenance Tips",
             date: "2024-05-20",
             description: "Learn how to maintain your guitar with our expert tips and tricks.",
-            image: image
+            image: image3
         },
         {
             id: 5,
             title: "Upcoming Guitar Workshops",
             date: "2024-06-15",
             description: "Join our upcoming workshops to improve your guitar skills.",
-            image: image
+            image: image5
         },
         {
             id: 6,
             title: "Customer Appreciation Day",
             date: "2024-07-01",
             description: "We are celebrating Customer Appreciation Day with special events and discounts.",
-            image: image
+            image: image6
         }
     ];
 

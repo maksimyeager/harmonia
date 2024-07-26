@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import MobileNavbar from "../components/MobileNavbar";
 
-const Layout = () => {
+const LoginLayout = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -16,10 +15,8 @@ const Layout = () => {
             <main className="main">
                 <Outlet />
             </main>
-            
-            <Footer />
         </>
     );
 };
 
-export default Layout;
+export default LoginLayout;
