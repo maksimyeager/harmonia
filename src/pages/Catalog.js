@@ -40,16 +40,16 @@ const Catalog = ({ products }) => {
     );
 
     return (
-        <div className="flex flex-col md:flex-row">
-            <button
-                onClick={handleSidebarToggle}
-                className="md:hidden p-4 flex items-center justify-center"
-            >
-                <FaBars />
-                <span className="ml-2">
-                    Close Filters
-                </span>
-            </button>
+        <div className="flex flex-col md:flex-row pt-4 md:pt-0">
+            <div className="flex px-6 justify-center">
+                <button
+                    onClick={handleSidebarToggle}
+                    className="md:hidden py-1.5 px-2 flex items-center justify-center w-max border-2 border-solid rounded"
+                >
+                    <FaBars />
+                    <span className="ml-2">Open Filters</span>
+                </button>
+            </div>
             <div
                 className={`fixed top-0 left-0 bg-white w-full md:w-64 z-99 md:z-40 h-full p-6 transform ${
                     isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -57,10 +57,7 @@ const Catalog = ({ products }) => {
             >
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Sort Guitars</h2>
-                    <button
-                        onClick={handleSidebarToggle}
-                        className="md:hidden"
-                    >
+                    <button onClick={handleSidebarToggle} className="md:hidden">
                         <FaTimes />
                     </button>
                 </div>
@@ -151,6 +148,7 @@ const Catalog = ({ products }) => {
                     {filteredProducts.map((product) => (
                         <ProductCard
                             key={product.id}
+                            id={product.id}
                             image={product.image}
                             name={product.name}
                             price={product.price}

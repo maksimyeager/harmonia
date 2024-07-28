@@ -8,6 +8,10 @@ import Catalog from "./pages/Catalog";
 import News from "./pages/News";
 import ProductDetails from "./pages/ProductDetails"; // Импортируем компонент деталей продукта
 import ScrollToTop from "./utils/scrollToTop";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import LoginLayout from "./layout/LoginLayout";
+import Cart from "./pages/Cart";
 
 import electroGuitar1 from "./assets/images/guitars/electro-guitar-1.jpg";
 import electroGuitar2 from "./assets/images/guitars/electro-guitar-2.jpg";
@@ -21,9 +25,7 @@ import acousticGuitar3 from "./assets/images/guitars/acoustic-guitar-3.jpg";
 import basGuitar1 from "./assets/images/guitars/bas-guitar-1.jpg";
 import basGuitar2 from "./assets/images/guitars/bas-guitar-2.jpg";
 import basGuitar3 from "./assets/images/guitars/bas-guitar-3.jpg";
-import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
-import LoginLayout from "./layout/LoginLayout";
+
 
 const products = [
     {
@@ -141,6 +143,7 @@ function App() {
                         path={"/product/:id"}
                         element={<ProductDetails products={products} />}
                     />
+                    <Route path={"/cart"} element={<Cart/>}></Route>
                 </Route>
                 <Route path={"/"} element={<LoginLayout/>}>
                     <Route path={"/login"} element={<LoginPage />} />

@@ -8,12 +8,9 @@ const Footer = () => {
     return (
         <footer className="footer bg-[#f5f5f5] text-black pt-6">
             <div>
-                <div className="container mx-auto flex flex-col md:flex-row md:justify-between pb-10">
+                <div className="container mx-auto flex flex-col gap-4 md:flex-row md:justify-between pb-10">
                     <div className="mb-4 md:mb-0">
-                        <img src={logo} alt="" className="w-32 m-auto" />
-                        <p className="text-base sm:text-lg mt-2 font-bold text-center">
-                            Discover the Harmony with Harmonia
-                        </p>
+                        <img src={logo} alt="" className="w-40 m-auto" />
                     </div>
                     <div className="mb-4 md:mb-0">
                         <nav className="footer-nav">

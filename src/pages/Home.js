@@ -132,7 +132,7 @@ const Home = () => {
         <>
             <Banner />
             <main className="py-10 px-8">
-                <section>
+                <section className="mb-8">
                     <h1 className="title-1">New Models</h1>
                     <div className="swiper relative">
                         <SwiperComponent products={products} />
@@ -144,20 +144,6 @@ const Home = () => {
                         <SwiperComponent products={products} />
                     </div>
                 </section>
-                {/* <div>
-                    <button
-                        id="prev"
-                        className="absolute top-1/2 left-0 l-0 z-50 p-4 rounded-full hover:bg-[#c1c0c0]"
-                    >
-                        <GrFormPrevious size={"28px"} />
-                    </button>
-                    <button
-                        id="next"
-                        className="absolute top-1/2 right-0 l-0 z-50 p-4 rounded-full hover:bg-[#c1c0c0]"
-                    >
-                        <GrFormNext size={"28px"} />
-                    </button>
-                </div> */}
             </main>
         </>
     );

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ id, image, name, price }) => {
     return (
-        <div key={id} className="bg-white border border-solid border-[#e5e5e5] h-auto">
+        <div key={id} className="bg-white border border-solid border-[#e5e5e5] h-auto ">
             <div className="card-image w-full relative overflow-hidden">
                 <Link to={`/product/${id}`} className="absolute top-0 bottom-0 left-0 right-0 z-10"></Link>
                 <img
